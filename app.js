@@ -4,7 +4,7 @@ const app = express();
 const version = process.env.APP_VERSION || "v1";
 
 app.get("/", (req, res) => {
-    res.send(`Hello! Git and Docker integration is working. Version: ${version}`);
+    res.send(`version 2:Hello! Git and Docker integration is working. Version: ${version}`);
 });
 
 app.get("/health", (req, res) => {
